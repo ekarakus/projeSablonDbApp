@@ -16328,8 +16328,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\BT OGRETMEN\\source\\repos\\sporKlubuApp\\Views\\Uye\\Index.cshtml",
+      "TargetPath": "Views\\Uye\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\BT OGRETMEN\\source\\repos\\sporKlubuApp\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\BT OGRETMEN\\source\\repos\\sporKlubuApp\\Views\\Uye\\Ekle.cshtml",
+      "TargetPath": "Views\\Uye\\Ekle.cshtml",
       "FileKind": "mvc"
     }
   ],

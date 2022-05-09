@@ -1,0 +1,10 @@
+@using sporKlubuApp.Models;
+@model List<Uye>
+@foreach (var item in Model)
+{
+    <div class="row">
+        <div class="col-4">@item.Ad</div>
+        <div class="col-4">@item.Soyad</div>
+        <div class="col-4">@item.Email</div>
+    </div>
+}
