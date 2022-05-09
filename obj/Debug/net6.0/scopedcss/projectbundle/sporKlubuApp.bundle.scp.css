@@ -1,0 +1,49 @@
+/* _content/sporKlubuApp/Views/Shared/_Layout.cshtml.rz.scp.css */
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand[b-ahkxdg8szy] {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a[b-ahkxdg8szy] {
+  color: #0077cc;
+}
+
+.btn-primary[b-ahkxdg8szy] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-ahkxdg8szy], .nav-pills .show > .nav-link[b-ahkxdg8szy] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top[b-ahkxdg8szy] {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-ahkxdg8szy] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-ahkxdg8szy] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-ahkxdg8szy] {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer[b-ahkxdg8szy] {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}
