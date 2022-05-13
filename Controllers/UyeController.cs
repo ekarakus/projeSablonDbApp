@@ -60,10 +60,29 @@ namespace sporKlubuApp.Controllers
         {
             if (id.HasValue)
             {
-                return View();
+                Uye aranan = _context.Uyeler.Find(id);
+                if (aranan != null)
+                {
+                    return View(aranan);
+                }
+                //eğer aranan id ile kayıt yok ise 404 ver
+                return NotFound();
             }
+            //eğer id gelmedi ise 404 ver
             return NotFound();
 
+        }
+        [HttpPost]
+        public IActionResult Duzenle(Uye m)
+        {
+            
+            if (ModelState.IsValid)
+            {
+                _context.Uyeler.Update(m);
+                _context.SaveChanges();
+                return RedirectToAction(nameof(Index));
+            }
+            return View();
         }
     }
 }
