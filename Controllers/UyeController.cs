@@ -39,5 +39,31 @@ namespace sporKlubuApp.Controllers
             //eğer model geçersiz ise  hataların olduğu hali ile kullanıcıya tekrar göster
             return View();
         }
+
+        public IActionResult Sil(int id)
+        {
+            //silinecek kaydı bul
+            Uye silinecek = _context.Uyeler.Find(id);
+            //eğer silinecek kayıt veritabanına var ise
+            if (silinecek != null)
+            {
+                //veritabanından sil
+                _context.Remove(silinecek);
+                //veritabanını güncelle
+                _context.SaveChanges();
+            }
+            //listeye yönlendir
+            return RedirectToAction(nameof(Index));
+        }
+
+        public IActionResult Duzenle(int? id)
+        {
+            if (id.HasValue)
+            {
+                return View();
+            }
+            return NotFound();
+
+        }
     }
 }

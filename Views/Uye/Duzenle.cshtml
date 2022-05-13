@@ -3,6 +3,7 @@
 
 <form asp-antiforgery="true">
     <div class="row">
+        <input type="hidden" asp-for="Id" />
         <div class="col-3">
             <label asp-for="Ad" class="control-label"></label>
         </div>
@@ -32,9 +33,9 @@
     <div class="row">
         <button type="submit" class="btn-primary btn">Kaydet</button>
         <button type="reset" class="btn-danger btn">Sıfırla</button>
-        
+
     </div>
 </form>
 @section Scripts{
-    <partial name="_ValidationScriptsPartial"/>
+<partial name="_ValidationScriptsPartial" />
 }

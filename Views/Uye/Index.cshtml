@@ -2,9 +2,27 @@
 @model List<Uye>
 @foreach (var item in Model)
 {
-    <div class="row">
-        <div class="col-4">@item.Ad</div>
-        <div class="col-4">@item.Soyad</div>
-        <div class="col-4">@item.Email</div>
+    <div class="row mb-1">
+        <div class="col-3">@item.Ad</div>
+        <div class="col-3">@item.Soyad</div>
+        <div class="col-3">@item.Email</div>
+        <div class="col-3">
+            <a class="btn btn-danger sil" asp-action="Sil" 
+            asp-route-id="@item.Id">
+                <i class="bi bi-trash-fill"></i>
+            </a>
+            <a asp-action="Duzenle" class="btn-primary btn" 
+            asp-route-id="@item.Id" title="Düzenle">
+               <i class="bi bi-pencil-square"></i>
+            </a>
+        </div>
+
     </div>
+}
+@section Scripts{
+<script>
+    $(".sil").click(function () {
+        return confirm("Silmek istediğinizden emin misiniz?");
+    })
+</script>
 }
